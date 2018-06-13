@@ -10,3 +10,5 @@ Guide:
 3. Paste the link in first text field
 4. Generate fixed link
 5. Open image (Opens in default browser)
+
+![alt text](https://i.imgur.com/t3Spc3E.png)
