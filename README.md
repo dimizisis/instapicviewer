@@ -11,4 +11,4 @@ Guide:
 4. Generate fixed link
 5. Open image (Opens in default browser)
 
-![alt text](https://i.imgur.com/t3Spc3E.png)
+![alt text](https://i.imgur.com/TQtmiZf.png)
