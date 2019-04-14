@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.imageLink = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
             this.fixedLink = new System.Windows.Forms.TextBox();
             this.generateBtn = new System.Windows.Forms.Button();
             this.pasteBtn = new System.Windows.Forms.Button();
@@ -37,14 +37,14 @@
             this.browserBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // imageLink
+            // username
             // 
-            this.imageLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.imageLink.Location = new System.Drawing.Point(33, 12);
-            this.imageLink.Name = "imageLink";
-            this.imageLink.Size = new System.Drawing.Size(180, 20);
-            this.imageLink.TabIndex = 0;
-            this.imageLink.Text = "Enter image link...";
+            this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.username.Location = new System.Drawing.Point(33, 12);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(180, 20);
+            this.username.TabIndex = 0;
+            this.username.Text = "Enter username...";
             // 
             // fixedLink
             // 
@@ -106,7 +106,7 @@
             this.Controls.Add(this.pasteBtn);
             this.Controls.Add(this.generateBtn);
             this.Controls.Add(this.fixedLink);
-            this.Controls.Add(this.imageLink);
+            this.Controls.Add(this.username);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(308, 170);
@@ -120,7 +120,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox imageLink;
+        private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.TextBox fixedLink;
         private System.Windows.Forms.Button generateBtn;
         private System.Windows.Forms.Button pasteBtn;

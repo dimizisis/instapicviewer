@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Instagram_Profile_Photo_Revealer
@@ -13,30 +15,16 @@ namespace Instagram_Profile_Photo_Revealer
         private void generateBtn_Click(object sender, EventArgs e)
         {
 
-            if (!imageLink.Text.Contains("https:")) MessageBox.Show("Please enter a valid instagram photo link (Right Click On Image -> Open in New Window -> Copy Link)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Boolean successful = run_cmd();
 
-            else
-            {
-
-                string link = imageLink.Text; // Original image link
-
-                string startLink = "https://scontent-lga3-1.cdninstagram.com/"; // How fixed link will start!
-
-                string fLink = link.Replace("/vp", ""); // Retrieve last 113 characters of original link (the ones we need to place to our fixed)!
-
-                fixedLink.Text = startLink + fLink.Replace("s150x150", "s1080x1080"); // Start with fixed instagram server and place the ID's with new dimensions (1080x1080)!
-
-                browserBtn.Enabled = true; // Open in browser can now be clicked
-
-                fixedLink.SelectAll(); // Select all by double clicking on fixed link text
-
-            }
+            if (successful) browserBtn.Enabled = true;
+            
 
         }
 
         private void pasteBtn_Click(object sender, EventArgs e)
         {
-            imageLink.Text = Clipboard.GetText(); // Paste from clipboard
+            username.Text = Clipboard.GetText(); // Paste from clipboard
         }
 
         private void copyBtn_Click(object sender, EventArgs e)
@@ -47,8 +35,36 @@ namespace Instagram_Profile_Photo_Revealer
 
         private void browserBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(fixedLink.Text); // Open fixed link in default browser
+            Process.Start(fixedLink.Text); // Open fixed link in default browser
         }
 
+        private Boolean run_cmd()
+        {
+            try
+            {
+                string fileName = @"script.py";
+
+                ProcessStartInfo start = new ProcessStartInfo();
+                start.FileName = "python.exe";
+                Console.Write(username.Text);
+                Console.Read();
+                start.Arguments = string.Format("{0} {1}", fileName, username.Text);
+                start.UseShellExecute = false;
+                start.RedirectStandardOutput = true;
+                using (Process process = Process.Start(start))
+                {
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        string result = reader.ReadToEnd();
+                        fixedLink.Text = result;
+
+                    }
+                }
+                return true;
+            }
+            catch { return false; }
+            
+
+        }
     }
 }

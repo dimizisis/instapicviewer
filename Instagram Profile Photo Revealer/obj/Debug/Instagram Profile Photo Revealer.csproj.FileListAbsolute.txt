@@ -1,10 +1,13 @@
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\bin\Debug\Instagram Profile Photo Revealer.exe.config
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\bin\Debug\Instagram Profile Photo Revealer.exe
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\bin\Debug\Instagram Profile Photo Revealer.pdb
-C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.csprojResolveAssemblyReference.cache
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram_Profile_Photo_Revealer.Main.resources
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram_Profile_Photo_Revealer.Properties.Resources.resources
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.csproj.GenerateResource.Cache
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.csproj.CoreCompileInputs.cache
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.exe
 C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.pdb
+C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\bin\Debug\Instagram Profile Photo Revealer.exe.manifest
+C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\bin\Debug\Instagram Profile Photo Revealer.application
+C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.exe.manifest
+C:\Users\Dimitris\source\repos\Instagram Profile Photo Revealer\Instagram Profile Photo Revealer\obj\Debug\Instagram Profile Photo Revealer.application
